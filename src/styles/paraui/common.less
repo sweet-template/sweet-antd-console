@@ -1,0 +1,204 @@
+@import "../themes/default";
+
+// 公用样式
+.para- {
+
+  //公用模块
+
+  /* 左侧菜单展示 */
+
+  &left-nav {
+    ul {
+      margin: 0.5rem 0;
+
+      ul > li {
+        padding-left: 1.31rem;
+        line-height: 1.88rem;
+        cursor: pointer;
+        border-radius: 0.31rem;
+      }
+    }
+
+    .title {
+      & > span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  /* 功能按钮 */
+
+  &operate {
+    button {
+      background-color: @operate-btn-bg;
+      padding: 0 0.88rem;
+      height: 2.5rem;
+      font-size: 0.88rem;
+      color: @operate-btn-color;
+      margin-left: 0.63rem;
+      border: solid 0.06rem @black4;
+
+      i {
+        font-size: 1rem;
+        color: @blue;
+      }
+
+      span {
+        margin-left: 0.44rem;
+      }
+    }
+  }
+
+  /* 表格内的按钮 */
+
+  &table-operating {
+    font-size: 0.88rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    display: inline-block;
+    background-color: @operate-btn-bg;
+    border-radius: 0.31rem;
+    border: solid 0.06rem @black4;
+    padding: 0 1rem;
+
+    .item {
+      cursor: pointer;
+
+      i {
+        color: @blue;
+        margin-right: 0.5rem;
+
+        &.del {
+          color: @red;
+        }
+      }
+    }
+  }
+
+  /* 左侧步骤条 */
+
+  &left-step {
+    margin-top: 1.5rem;
+
+    .ant-steps-item {
+      padding: 0.63rem;
+      height: 2.25rem;
+      line-height: 2.25rem;
+
+      &.ant-steps-item-process,
+      &.ant-steps-item-finish {
+        .ant-steps-item-title {
+          color: @blue;
+        }
+
+        .ant-steps-icon-dot {
+          border-color: @blue;
+        }
+      }
+
+      &.ant-steps-item-process {
+        background: @blue-light;
+
+        .ant-steps-item-icon {
+          width: 8px;
+          height: 8px;
+        }
+      }
+
+      &.ant-steps-item-process,
+      &.ant-steps-item-wait,
+      &.ant-steps-item-finish {
+        .ant-steps-icon-dot {
+          background: transparent;
+        }
+      }
+
+      .ant-steps-icon-dot {
+        width: 0.88rem;
+        height: 0.81rem;
+        border-radius: 0.31rem;
+        border: solid 0.13rem @black2;
+        background: transparent;
+      }
+    }
+
+    .ant-steps-vertical.ant-steps-dot {
+      .ant-steps-item-tail {
+        left: 4px;
+        top: 11px;
+
+        &::after {
+          height: 18px;
+          background-color: @blue;
+        }
+      }
+
+      .ant-steps-item-wait {
+        .ant-steps-item-tail {
+          &::after {
+            background: @black2;
+          }
+        }
+      }
+    }
+  }
+
+  // 公用小部件
+
+  /* 标题前的小圆圈 */
+
+  &t-circle {
+    display: inline-block;
+    width: 0.88rem;
+    height: 0.81rem;
+    border-radius: 0.31rem;
+    border: solid 0.13rem @blue;
+    vertical-align: middle;
+    margin: 0 0.5rem 0.2rem 0;
+  }
+
+  /* 左侧菜单栏标题 */
+
+  &left-sub-title {
+    font-size: 1.5rem;
+    color: @black;
+  }
+
+  /* 左侧菜单栏-返回 */
+
+  &left-back {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 0.31rem;
+    border: solid 0.06rem @black4;
+    padding: 0;
+    color: @blue;
+  }
+
+  /* 按钮 */
+
+  &btn {
+    width: 6.88rem;
+    height: 2.5rem;
+    background-color: @black4;
+    background-blend-mode: normal,
+    normal;
+    border-radius: 0.31rem;
+    border: 0;
+    font-size: 1rem;
+    font-weight: bold;
+
+    &.blue {
+      background-image: linear-gradient(176deg,
+      #198cff 1%,
+      #3da2fd 87%,
+      #60b7fa 100%),
+      linear-gradient(
+        #ecf6ff,
+        #ecf6ff);
+    }
+  }
+}
+
+
+

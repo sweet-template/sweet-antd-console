@@ -1,0 +1,41 @@
+@import "../themes/default";
+// para-table 样式复写
+.paraTable {
+  table {
+    color: @operate-btn-color;
+  }
+
+  .ant-table-title {
+    display: none;
+  }
+
+  .ant-table-thead {
+    height: 2.25rem;
+    line-height: 2.25rem;
+
+    tr {
+      border-radius: 0.31rem;
+      height: 2.25rem;
+
+      th {
+        padding: 0;
+        border-bottom: 0;
+        background-color: @blue-light;
+        text-align: center;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .ant-table-tbody {
+    tr {
+      height: 3.56rem;
+    }
+
+    td {
+      text-align: center;
+      padding: 0;
+      border-bottom: 0;
+    }
+  }
+}

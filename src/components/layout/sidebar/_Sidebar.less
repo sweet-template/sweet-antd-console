@@ -1,0 +1,129 @@
+@import "../../../styles/themes/default";
+.sidebar-left {
+  background-color: #001529;
+  height: calc(100vh);
+
+  .logo {
+    height: 2rem;
+    background: rgba(255, 255, 255, .2);
+    color: #ffffff;
+    text-align: center;
+    line-height: 3.2rem;
+  }
+}
+
+.sidebar-top {
+  height: 4.38rem;
+
+  .ant-layout-header {
+    padding: 0;
+  }
+
+  .header {
+    height: 4.38rem;
+    background-color: #ffffff;
+    color: @black;
+    & > div {
+      display: inline-block;
+      height: 4.38rem;
+      line-height: 4.38rem;
+      vertical-align: top;
+    }
+
+    .logo {
+      margin-left: 1.81rem;
+      line-height: 4.38rem;
+
+      img {
+        width: 1.94rem;
+        height: 1.94rem;
+      }
+
+      .title {
+        font-family: MicrosoftYaHei-Bold;
+        font-size: 1rem;
+        font-color: @black;
+        letter-spacing: 0rem;
+        margin-left: 1.25rem;
+      }
+    }
+
+    .line {
+      margin-left: 2.56rem;
+      margin-right: 2.88rem;
+      vertical-align: middle;
+      border-left: 0.06rem solid @black4;
+      height: 2.81rem;
+      display: inline-block;
+    }
+
+    .menu {
+      height: 4.38rem;
+      vertical-align: top;
+      .header-vertical {
+        & > ul {
+          line-height: 4.38rem !important;
+          border-bottom: 0 !important;
+
+          & > li {
+            height: 4.38rem;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+    .header-top-right-icon {
+      float: right;
+      font-size: 1.06rem;
+      position: relative;
+      z-index: 300;
+      .logout{
+        margin-right: 1.88rem;
+        margin-left: 2.5rem;
+        cursor: pointer;
+      }
+      .help{
+        cursor: pointer;
+      }
+      .line{
+        margin-left: 2.69rem;
+        margin-right: 2.5rem;
+      }
+    }
+    .header-top-right-user{
+      float: right;
+      margin-left: 2.5rem;
+      img{
+        width: 2.13rem;
+        height: 2.13rem;
+        margin-right: 0.75rem;
+      }
+      span{
+        font-family: MicrosoftYaHei;
+        font-size: 0.88rem;
+        line-height: 3rem;
+        letter-spacing: 0rem;
+        color: @font-color1;
+        cursor: pointer;
+        i{
+          color: @font-color2;
+        }
+      }
+    }
+    .header-top-right-selfcare{
+      float: right;
+      button{
+        width: 6.25rem;
+        height: 2.25rem;
+        border-radius: 0.31rem;
+        padding: 0 0.75rem;
+        border: 0;
+        background: @blue;
+        background: @btn-gradient;
+        text-shadow: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
