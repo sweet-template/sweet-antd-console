@@ -16,7 +16,7 @@
     "animejs": "^3.0.1",
     "jquery": "^3.4.1",
     "jquery-slim": "^3.0.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "md5": "^2.2.1",
     "nprogress": "^0.2.0",
     "para-lib-v2": "^2.0.9",
